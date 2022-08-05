@@ -1,0 +1,2065 @@
+{
+  "preset_info": {
+    "version": 11,
+    "title": "GenshinInfo",
+    "description": "基于Eight for kwgt 中的B05进行二次创作。\\n原作者：酷安@ffbfe9｜www.coolapk.com",
+    "author": "酷安@YifePlayte｜www.coolapk.com",
+    "email": "yife-playte@foxmail.com",
+    "width": 440,
+    "height": 440,
+    "features": "DOWNLOAD",
+    "release": 357121814,
+    "locked": false,
+    "pflags": 0
+  },
+  "preset_root": {
+    "internal_type": "RootLayerModule",
+    "globals_list": {
+      "贴合边缘": {
+        "index": 15,
+        "type": "SWITCH",
+        "title": "贴合边缘",
+        "description": "",
+        "global_formula": "",
+        "value": 1
+      },
+      "a颜色1": {
+        "index": 22,
+        "type": "COLOR",
+        "title": "a颜色1",
+        "description": "",
+        "global_formula": "",
+        "value": "#FFF3A728"
+      },
+      "a颜色2": {
+        "index": 23,
+        "type": "COLOR",
+        "title": "a颜色2",
+        "description": "",
+        "global_formula": "",
+        "value": "#FFF5D297"
+      },
+      "b颜色1": {
+        "index": 24,
+        "type": "COLOR",
+        "title": "b颜色1",
+        "description": "",
+        "global_formula": "",
+        "value": "#FFF74783"
+      },
+      "b颜色2": {
+        "index": 25,
+        "type": "COLOR",
+        "title": "b颜色2",
+        "description": "",
+        "global_formula": "",
+        "value": "#FFF7B2CA"
+      },
+      "c颜色1": {
+        "index": 26,
+        "type": "COLOR",
+        "title": "c颜色1",
+        "description": "",
+        "global_formula": "",
+        "value": "#FFEB4141"
+      },
+      "c颜色2": {
+        "index": 27,
+        "type": "COLOR",
+        "title": "c颜色2",
+        "description": "",
+        "global_formula": "",
+        "value": "#FFF19770"
+      },
+      "颜色": {
+        "index": 10,
+        "type": "LIST",
+        "title": "颜色",
+        "entries": "a##橙,b##粉,c##红,d##蓝",
+        "value": "d"
+      },
+      "d颜色1": {
+        "index": 28,
+        "type": "COLOR",
+        "title": "d颜色1",
+        "description": "",
+        "global_formula": "",
+        "value": "#FF215FF0"
+      },
+      "d颜色2": {
+        "index": 29,
+        "type": "COLOR",
+        "title": "d颜色2",
+        "description": "",
+        "global_formula": "",
+        "value": "#FF70B3F1"
+      },
+      "圆角": {
+        "index": 21,
+        "type": "NUMBER",
+        "title": "圆角",
+        "min": -10,
+        "max": 10000,
+        "value": 30.0
+      },
+      "模块方形": {
+        "index": 16,
+        "type": "SWITCH",
+        "title": "模块方形",
+        "value": 0
+      },
+      "模块宽": {
+        "index": 19,
+        "type": "NUMBER",
+        "title": "模块宽",
+        "min": 0,
+        "max": 10000,
+        "value": 350.0
+      },
+      "模块高": {
+        "index": 20,
+        "type": "NUMBER",
+        "title": "模块高",
+        "min": 0,
+        "max": 10000,
+        "value": 200.0
+      },
+      "模块边长": {
+        "index": 18,
+        "type": "NUMBER",
+        "title": "模块边长",
+        "description": "在打开“模块方形”时生效",
+        "min": 0,
+        "max": 10000,
+        "value": 340.0
+      },
+      "读条方向": {
+        "index": 14,
+        "type": "LIST",
+        "title": "读条方向",
+        "entries": "t##↑,d##↓,r##→,l##←",
+        "value": "t"
+      },
+      "文字比例": {
+        "index": 3,
+        "type": "NUMBER",
+        "title": "文字比例",
+        "value": 44.0,
+        "min": 0,
+        "max": 100
+      },
+      "探索派遣边距": {
+        "index": 4,
+        "type": "NUMBER",
+        "title": "探索派遣边距",
+        "min": 0,
+        "max": 100,
+        "value": 10.0
+      },
+      "底部信息边距": {
+        "index": 8,
+        "type": "NUMBER",
+        "title": "底部信息边距",
+        "min": 0,
+        "max": 100,
+        "value": 20.0
+      },
+      "后端地址": {
+        "index": 2,
+        "type": "TEXT",
+        "title": "后端地址",
+        "description": "后端：https://github.com/Haocen2004/genshin-dailynote-helper",
+        "value": "http://localhost/resin/all"
+      },
+      "剩余或完成": {
+        "index": 9,
+        "type": "SWITCH",
+        "title": "剩余或完成",
+        "value": 0
+      },
+      "探索派遣位置": {
+        "index": 7,
+        "type": "LIST",
+        "title": "探索派遣位置",
+        "entries": "TOPLEFT##左上,BOTTOMRIGHT##右下,TOPRIGHT##右上,BOTTOMLEFT##左下",
+        "value": "TOPLEFT"
+      }
+    },
+    "internal_toggles": {
+      "config_scale_value": 0
+    },
+    "internal_formulas": {
+      "config_scale_value": "100"
+    },
+    "internal_events": [
+      {
+        "type": "SINGLE_TAP",
+        "action": "KUSTOM_ACTION",
+        "kustom_action": "TEXT_UPDATE"
+      }
+    ],
+    "viewgroup_items": [
+      {
+        "internal_toggles": {
+          "shape_width": 10,
+          "shape_corners": 100,
+          "shape_height": 10
+        },
+        "internal_formulas": {
+          "shape_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))$",
+          "shape_corners": "$si(rratio)*30/0.71287$",
+          "shape_height": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rheight),gv(模块高)))$"
+        },
+        "internal_type": "ShapeModule",
+        "shape_corners": 30.0,
+        "paint_color": "#FFF2AE3E",
+        "fx_gradient_offset_y": 10.0,
+        "fx_gradient_offset_x": 90.0,
+        "fx_gradient_color": "#FFF9D357",
+        "fx_gradient": "RADIAL",
+        "internal_title": "裁切块",
+        "fx_mask": "CLIP_NEXT",
+        "internal_globals": {
+          "shape_corners": "圆角"
+        },
+        "shape_type": "RECT"
+      },
+      {
+        "internal_type": "OverlapLayerModule",
+        "internal_title": "背景",
+        "internal_toggles": {
+          "config_visible": 0
+        },
+        "internal_formulas": {
+          "config_visible": "$if(gv(读条方向)=t|gv(读条方向)=d,ALWAYS,REMOVE)$"
+        },
+        "viewgroup_items": [
+          {
+            "internal_toggles": {
+              "shape_width": 10,
+              "shape_corners": 100,
+              "paint_color": 10,
+              "fx_gradient_color": 10,
+              "shape_height": 10
+            },
+            "internal_formulas": {
+              "shape_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))$",
+              "shape_corners": "$si(rratio)*30/0.71287$",
+              "paint_color": "$gv(gv(颜色)+颜色1)$",
+              "fx_gradient_color": "$gv(gv(颜色)+颜色2)$",
+              "shape_height": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rheight),gv(模块高)))$"
+            },
+            "internal_type": "ShapeModule",
+            "shape_corners": 30.0,
+            "paint_color": "#FFF3A728",
+            "fx_gradient_offset_y": 10.0,
+            "fx_gradient_offset_x": 90.0,
+            "fx_gradient_color": "#FFEBCA5F",
+            "fx_gradient": "RADIAL",
+            "internal_title": "底",
+            "fx_gradient_width": 60.0,
+            "internal_globals": {
+              "shape_corners": "圆角"
+            },
+            "shape_type": "RECT"
+          },
+          {
+            "internal_toggles": {
+              "shape_width": 10,
+              "shape_corners": 100,
+              "paint_color": 0,
+              "fx_gradient_color": 10,
+              "shape_height": 10
+            },
+            "internal_formulas": {
+              "shape_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))$",
+              "shape_corners": "$si(rratio)*30/0.71287$",
+              "paint_color": "$gv(gv(颜色)+颜色1)$",
+              "fx_gradient_color": "$gv(gv(颜色)+颜色2)$",
+              "shape_height": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rheight),gv(模块高)))$"
+            },
+            "internal_type": "ShapeModule",
+            "shape_corners": 30.0,
+            "paint_color": "#40000000",
+            "fx_gradient_offset_y": 10.0,
+            "fx_gradient_offset_x": 90.0,
+            "fx_gradient_color": "#FFEBCA5F",
+            "internal_title": "遮",
+            "fx_gradient_width": 60.0,
+            "internal_globals": {
+              "shape_corners": "圆角"
+            },
+            "shape_type": "RECT"
+          },
+          {
+            "internal_toggles": {
+              "shape_width": 10,
+              "shape_corners": 0,
+              "paint_color": 10,
+              "fx_gradient_color": 10,
+              "shape_height": 10,
+              "position_anchor": 10
+            },
+            "internal_formulas": {
+              "shape_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*if(gv(读条方向)=r|gv(读条方向)=l,(wg(gv(后端地址),json,.max_resin)-mu(ceil,(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp())/480))/wg(gv(后端地址),json,.max_resin),1)$",
+              "shape_corners": "$si(rratio)*30/0.71287$",
+              "paint_color": "$gv(gv(颜色)+颜色1)$",
+              "fx_gradient_color": "$gv(gv(颜色)+颜色2)$",
+              "shape_height": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rheight),gv(模块高)))*if(gv(读条方向)=t|gv(读条方向)=d,(wg(gv(后端地址),json,.max_resin)-mu(ceil,(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp())/480))/wg(gv(后端地址),json,.max_resin),1)$",
+              "position_anchor": "$if(gv(读条方向)=t,bottom,gv(读条方向)=d,top,gv(读条方向)=r,centerleft,gv(读条方向)=l,centerright,\"\")$"
+            },
+            "internal_type": "ShapeModule",
+            "shape_corners": 28.0,
+            "paint_color": "#FFF3A728",
+            "fx_gradient_offset_y": 10.0,
+            "fx_gradient_offset_x": 90.0,
+            "fx_gradient_color": "#FFEBCA5F",
+            "fx_gradient": "RADIAL",
+            "internal_title": "裁",
+            "fx_gradient_width": 60.0,
+            "internal_globals": {
+              "shape_corners": "圆角"
+            },
+            "shape_type": "RECT",
+            "fx_mask": "CLIP_ALL",
+            "position_anchor": "BOTTOM"
+          },
+          {
+            "internal_toggles": {
+              "shape_width": 10,
+              "shape_corners": 100,
+              "paint_color": 10,
+              "fx_gradient_color": 10,
+              "shape_height": 10
+            },
+            "internal_formulas": {
+              "shape_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))$",
+              "shape_corners": "$si(rratio)*30/0.71287$",
+              "paint_color": "$gv(gv(颜色)+颜色1)$",
+              "fx_gradient_color": "$gv(gv(颜色)+颜色2)$",
+              "shape_height": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rheight),gv(模块高)))$"
+            },
+            "internal_type": "ShapeModule",
+            "shape_corners": 30.0,
+            "paint_color": "#FFF3A728",
+            "fx_gradient_offset_y": 10.0,
+            "fx_gradient_offset_x": 90.0,
+            "fx_gradient_color": "#FFEBCA5F",
+            "fx_gradient": "RADIAL",
+            "internal_title": "顶",
+            "fx_gradient_width": 60.0,
+            "internal_globals": {
+              "shape_corners": "圆角"
+            },
+            "shape_type": "RECT"
+          }
+        ]
+      },
+      {
+        "internal_type": "StackLayerModule",
+        "position_anchor": "BOTTOMLEFT",
+        "internal_toggles": {
+          "position_padding_bottom": 0,
+          "position_padding_left": 100
+        },
+        "internal_formulas": {
+          "position_padding_bottom": "13",
+          "position_padding_left": "$gv(间隔)$"
+        },
+        "position_padding_bottom": 13.0,
+        "internal_title": "信息",
+        "internal_globals": {
+          "position_padding_left": "底部信息边距"
+        },
+        "viewgroup_items": [
+          {
+            "internal_type": "StackLayerModule",
+            "internal_toggles": {
+              "config_visible": 10
+            },
+            "internal_formulas": {
+              "config_visible": "$if(wg(gv(后端地址),json,.transformer.obtained)=false,REMOVE,ALWAYS)$"
+            },
+            "config_stacking": "HORIZONTAL_TOP",
+            "viewgroup_items": [
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]质变冷却 $if(wg(gv(后端地址),json,.transformer.recovery_time.Day)>0,wg(gv(后端地址),json,.transformer.recovery_time.Day)+天)+if(wg(gv(后端地址),json,.transformer.recovery_time.Hour)>0,wg(gv(后端地址),json,.transformer.recovery_time.Hour)+小时)+if(wg(gv(后端地址),json,.transformer.recovery_time.Minute)>0,wg(gv(后端地址),json,.transformer.recovery_time.Minute)+分钟)+if(wg(gv(后端地址),json,.transformer.recovery_time.Second)>0,少于+wg(gv(后端地址),json,.transformer.recovery_time.Second)+秒)$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if(wg(gv(后端地址),json,.transformer.recovery_time.reached)=false,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(底部信息边距)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]质变冷却 已冷却[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if(wg(gv(后端地址),json,.transformer.recovery_time.reached)=false,0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(底部信息边距)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              }
+            ]
+          },
+          {
+            "internal_type": "TextModule",
+            "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+            "text_expression": "[b]探索派遣 $wg(gv(后端地址),json,.current_expedition_num)$/$wg(gv(后端地址),json,.max_expedition_num)$[/b]",
+            "position_anchor": "TOPLEFT",
+            "internal_toggles": {
+              "text_size": 10,
+              "position_padding_left": 0,
+              "position_padding_top": 0,
+              "position_padding_right": 0,
+              "position_padding_bottom": 0,
+              "text_width": 10
+            },
+            "internal_formulas": {
+              "text_size": "$mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+              "position_padding_left": "$si(rratio)*24/0.71287$",
+              "position_padding_top": "$si(rratio)*142/0.71287$",
+              "position_padding_right": "$si(rratio)*155/0.71287$",
+              "position_padding_bottom": "$si(rratio)*97/0.71287$",
+              "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(底部信息边距)*2)$"
+            },
+            "text_size": 60.0,
+            "fx_gradient_offset_y": 100,
+            "fx_gradient_offset_x": 100,
+            "fx_gradient_color": "#9FFFFFFF",
+            "text_lines": 1.0,
+            "text_width": 60.0
+          },
+          {
+            "internal_type": "TextModule",
+            "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+            "text_expression": "[b]每日委托 $wg(gv(后端地址),json,.finished_task_num)$/$wg(gv(后端地址),json,.total_task_num)$ $if(wg(gv(后端地址),json,.is_extra_task_reward_received)=true,\"✔\",\"✗\")$[/b]",
+            "position_anchor": "TOPLEFT",
+            "internal_toggles": {
+              "text_size": 10,
+              "position_padding_left": 0,
+              "position_padding_top": 0,
+              "position_padding_right": 0,
+              "position_padding_bottom": 0,
+              "text_width": 10
+            },
+            "internal_formulas": {
+              "text_size": "$mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+              "position_padding_left": "$si(rratio)*24/0.71287$",
+              "position_padding_top": "$si(rratio)*142/0.71287$",
+              "position_padding_right": "$si(rratio)*155/0.71287$",
+              "position_padding_bottom": "$si(rratio)*97/0.71287$",
+              "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(底部信息边距)*2)$"
+            },
+            "text_size": 60.0,
+            "fx_gradient_offset_y": 100,
+            "fx_gradient_offset_x": 100,
+            "fx_gradient_color": "#9FFFFFFF",
+            "text_lines": 1.0,
+            "text_width": 60.0
+          },
+          {
+            "internal_type": "TextModule",
+            "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+            "text_expression": "[b]原粹树脂 $if((wg(gv(后端地址),json,.max_resin)-mu(ceil,(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp())/480))<wg(gv(后端地址),json,.max_resin),wg(gv(后端地址),json,.max_resin)-mu(ceil,(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp())/480),wg(gv(后端地址),json,.max_resin))$/$wg(gv(后端地址),json,.max_resin)$[/b]",
+            "position_anchor": "TOPLEFT",
+            "internal_toggles": {
+              "text_size": 10,
+              "position_padding_left": 0,
+              "position_padding_top": 0,
+              "position_padding_right": 0,
+              "position_padding_bottom": 0,
+              "text_width": 10
+            },
+            "internal_formulas": {
+              "text_size": "$mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+              "position_padding_left": "$si(rratio)*24/0.71287$",
+              "position_padding_top": "$si(rratio)*142/0.71287$",
+              "position_padding_right": "$si(rratio)*155/0.71287$",
+              "position_padding_bottom": "$si(rratio)*97/0.71287$",
+              "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(底部信息边距)*2)$"
+            },
+            "text_size": 60.0,
+            "fx_gradient_offset_y": 100,
+            "fx_gradient_offset_x": 100,
+            "fx_gradient_color": "#9FFFFFFF",
+            "text_lines": 1.0,
+            "text_width": 60.0
+          },
+          {
+            "internal_type": "StackLayerModule",
+            "internal_title": "树脂回满时间",
+            "config_stacking": "HORIZONTAL_TOP",
+            "internal_events": [
+              {
+                "type": "SINGLE_TAP",
+                "action": "SWITCH_GLOBAL",
+                "switch": "剩余或完成"
+              }
+            ],
+            "viewgroup_items": [
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]回满时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp(),\"m'分钟'\")$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(底部信息边距)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]回满时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time))$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(底部信息边距)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]原粹树脂 溢出了！[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(底部信息边距)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              }
+            ]
+          },
+          {
+            "internal_type": "TextModule",
+            "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+            "text_expression": "[b]更新时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update))$[/b]",
+            "position_anchor": "TOPLEFT",
+            "internal_toggles": {
+              "text_size": 10,
+              "position_padding_left": 0,
+              "position_padding_top": 0,
+              "position_padding_right": 0,
+              "position_padding_bottom": 0,
+              "text_width": 10
+            },
+            "internal_formulas": {
+              "text_size": "$mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+              "position_padding_left": "$si(rratio)*24/0.71287$",
+              "position_padding_top": "$si(rratio)*142/0.71287$",
+              "position_padding_right": "$si(rratio)*155/0.71287$",
+              "position_padding_bottom": "$si(rratio)*97/0.71287$",
+              "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(底部信息边距)*2)$"
+            },
+            "text_size": 60.0,
+            "fx_gradient_offset_y": 100,
+            "fx_gradient_offset_x": 100,
+            "fx_gradient_color": "#9FFFFFFF",
+            "text_lines": 1.0,
+            "text_width": 60.0
+          },
+          {
+            "internal_type": "TextModule",
+            "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+            "text_expression": "[b]洞天宝钱 $wg(gv(后端地址),json,.current_home_coin)$/$wg(gv(后端地址),json,.max_home_coin)$[/b]",
+            "position_anchor": "TOPLEFT",
+            "internal_toggles": {
+              "text_size": 10,
+              "position_padding_left": 0,
+              "position_padding_top": 0,
+              "position_padding_right": 0,
+              "position_padding_bottom": 0,
+              "text_width": 10
+            },
+            "internal_formulas": {
+              "text_size": "$mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+              "position_padding_left": "$si(rratio)*24/0.71287$",
+              "position_padding_top": "$si(rratio)*142/0.71287$",
+              "position_padding_right": "$si(rratio)*155/0.71287$",
+              "position_padding_bottom": "$si(rratio)*97/0.71287$",
+              "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(底部信息边距)*2)$"
+            },
+            "text_size": 60.0,
+            "fx_gradient_offset_y": 100,
+            "fx_gradient_offset_x": 100,
+            "fx_gradient_color": "#9FFFFFFF",
+            "text_lines": 1.0,
+            "text_width": 60.0
+          },
+          {
+            "internal_type": "StackLayerModule",
+            "internal_title": "探索派遣",
+            "config_margin": -10.0,
+            "internal_toggles": {
+              "position_offset_x": 0,
+              "position_padding_left": 0,
+              "position_padding_bottom": 0,
+              "position_padding_right": 0,
+              "position_anchor": 10,
+              "config_visible": 10
+            },
+            "internal_formulas": {
+              "position_offset_x": "$gv(间隔)-23$",
+              "position_anchor": "$gv(探索派遣位置, TOPLEFT)$",
+              "config_visible": "$if(gv(探索派遣位置)=BOTTOMLEFT,ALWAYS,REMOVE)$"
+            },
+            "position_anchor": "TOPLEFT",
+            "internal_globals": {
+              "position_offset_x": "探索派遣边距",
+              "position_padding_left": "探索派遣边距",
+              "position_padding_bottom": "探索派遣边距",
+              "position_padding_right": "探索派遣边距"
+            },
+            "internal_events": [
+              {
+                "type": "SINGLE_TAP",
+                "action": "SWITCH_GLOBAL",
+                "switch": "剩余或完成"
+              }
+            ],
+            "position_padding_bottom": 10.0,
+            "position_padding_left": -8.0,
+            "position_padding_top": -10.0,
+            "viewgroup_items": [
+              {
+                "internal_type": "StackLayerModule",
+                "internal_title": "0",
+                "config_stacking": "HORIZONTAL_BOTTOM",
+                "internal_toggles": {
+                  "config_visible": 10
+                },
+                "internal_formulas": {
+                  "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>0,ALWAYS,REMOVE)$"
+                },
+                "viewgroup_items": [
+                  {
+                    "internal_type": "BitmapModule",
+                    "internal_toggles": {
+                      "bitmap_bitmap": 10,
+                      "bitmap_width": 10
+                    },
+                    "internal_formulas": {
+                      "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[0].avatar_side_icon)$",
+                      "bitmap_width": "$gv(文字比例)*0.75$"
+                    },
+                    "bitmap_width": 75.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time))$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]探险完成[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  }
+                ]
+              },
+              {
+                "internal_type": "StackLayerModule",
+                "internal_title": "1",
+                "config_stacking": "HORIZONTAL_BOTTOM",
+                "internal_toggles": {
+                  "config_visible": 10
+                },
+                "internal_formulas": {
+                  "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>1,ALWAYS,REMOVE)$"
+                },
+                "viewgroup_items": [
+                  {
+                    "internal_type": "BitmapModule",
+                    "internal_toggles": {
+                      "bitmap_bitmap": 10,
+                      "bitmap_width": 10
+                    },
+                    "internal_formulas": {
+                      "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[1].avatar_side_icon)$",
+                      "bitmap_width": "$gv(文字比例)*0.75$"
+                    },
+                    "bitmap_width": 75.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time))$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]探险完成[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  }
+                ]
+              },
+              {
+                "internal_type": "StackLayerModule",
+                "internal_title": "2",
+                "config_stacking": "HORIZONTAL_BOTTOM",
+                "internal_toggles": {
+                  "config_visible": 10
+                },
+                "internal_formulas": {
+                  "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>2,ALWAYS,REMOVE)$"
+                },
+                "viewgroup_items": [
+                  {
+                    "internal_type": "BitmapModule",
+                    "internal_toggles": {
+                      "bitmap_bitmap": 10,
+                      "bitmap_width": 10
+                    },
+                    "internal_formulas": {
+                      "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[2].avatar_side_icon)$",
+                      "bitmap_width": "$gv(文字比例)*0.75$"
+                    },
+                    "bitmap_width": 75.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time))$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]探险完成[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  }
+                ]
+              },
+              {
+                "internal_type": "StackLayerModule",
+                "internal_title": "3",
+                "config_stacking": "HORIZONTAL_BOTTOM",
+                "internal_toggles": {
+                  "config_visible": 10
+                },
+                "internal_formulas": {
+                  "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>3,ALWAYS,REMOVE)$"
+                },
+                "viewgroup_items": [
+                  {
+                    "internal_type": "BitmapModule",
+                    "internal_toggles": {
+                      "bitmap_bitmap": 10,
+                      "bitmap_width": 10
+                    },
+                    "internal_formulas": {
+                      "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[3].avatar_side_icon)$",
+                      "bitmap_width": "$gv(文字比例)*0.75$"
+                    },
+                    "bitmap_width": 75.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time))$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]探险完成[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  }
+                ]
+              },
+              {
+                "internal_type": "StackLayerModule",
+                "internal_title": "4",
+                "config_stacking": "HORIZONTAL_BOTTOM",
+                "internal_toggles": {
+                  "config_visible": 10
+                },
+                "internal_formulas": {
+                  "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>4,ALWAYS,REMOVE)$"
+                },
+                "viewgroup_items": [
+                  {
+                    "internal_type": "BitmapModule",
+                    "internal_toggles": {
+                      "bitmap_bitmap": 10,
+                      "bitmap_width": 10
+                    },
+                    "internal_formulas": {
+                      "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[4].avatar_side_icon)$",
+                      "bitmap_width": "$gv(文字比例)*0.75$"
+                    },
+                    "bitmap_width": 75.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time))$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]探险完成[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  }
+                ]
+              },
+              {
+                "internal_type": "StackLayerModule",
+                "internal_title": "5",
+                "config_stacking": "HORIZONTAL_BOTTOM",
+                "internal_toggles": {
+                  "config_visible": 10
+                },
+                "internal_formulas": {
+                  "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>5,ALWAYS,REMOVE)$"
+                },
+                "viewgroup_items": [
+                  {
+                    "internal_type": "BitmapModule",
+                    "internal_toggles": {
+                      "bitmap_bitmap": 10,
+                      "bitmap_width": 10
+                    },
+                    "internal_formulas": {
+                      "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[5].avatar_side_icon)$",
+                      "bitmap_width": "$gv(文字比例)*0.75$"
+                    },
+                    "bitmap_width": 75.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time))$[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  },
+                  {
+                    "internal_type": "TextModule",
+                    "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                    "text_expression": "[b]探险完成[/b]",
+                    "position_anchor": "TOPLEFT",
+                    "internal_toggles": {
+                      "text_size": 10,
+                      "position_padding_left": 0,
+                      "position_padding_top": 0,
+                      "position_padding_right": 0,
+                      "position_padding_bottom": 0,
+                      "text_width": 10
+                    },
+                    "internal_formulas": {
+                      "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                      "position_padding_left": "$si(rratio)*24/0.71287$",
+                      "position_padding_top": "$si(rratio)*142/0.71287$",
+                      "position_padding_right": "$si(rratio)*155/0.71287$",
+                      "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                      "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                    },
+                    "text_size": 60.0,
+                    "fx_gradient_offset_y": 100,
+                    "fx_gradient_offset_x": 100,
+                    "fx_gradient_color": "#9FFFFFFF",
+                    "text_lines": 1.0,
+                    "text_width": 60.0
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "internal_type": "StackLayerModule",
+        "internal_title": "探索派遣",
+        "config_margin": -10.0,
+        "internal_toggles": {
+          "position_offset_x": 0,
+          "position_padding_left": 100,
+          "position_padding_bottom": 0,
+          "position_padding_right": 100,
+          "position_anchor": 10,
+          "config_visible": 10
+        },
+        "internal_formulas": {
+          "position_offset_x": "$gv(间隔)-23$",
+          "position_anchor": "$gv(探索派遣位置, TOPLEFT)$",
+          "config_visible": "$if(gv(探索派遣位置)=BOTTOMLEFT,REMOVE,ALWAYS)$"
+        },
+        "position_anchor": "TOPLEFT",
+        "internal_globals": {
+          "position_offset_x": "探索派遣边距",
+          "position_padding_left": "探索派遣边距",
+          "position_padding_bottom": "探索派遣边距",
+          "position_padding_right": "探索派遣边距"
+        },
+        "internal_events": [
+          {
+            "type": "SINGLE_TAP",
+            "action": "SWITCH_GLOBAL",
+            "switch": "剩余或完成"
+          }
+        ],
+        "position_padding_bottom": 22.0,
+        "viewgroup_items": [
+          {
+            "internal_type": "StackLayerModule",
+            "internal_title": "0",
+            "config_stacking": "HORIZONTAL_BOTTOM",
+            "internal_toggles": {
+              "config_visible": 10
+            },
+            "internal_formulas": {
+              "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>0,ALWAYS,REMOVE)$"
+            },
+            "viewgroup_items": [
+              {
+                "internal_type": "BitmapModule",
+                "internal_toggles": {
+                  "bitmap_bitmap": 10,
+                  "bitmap_width": 10
+                },
+                "internal_formulas": {
+                  "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[0].avatar_side_icon)$",
+                  "bitmap_width": "$gv(文字比例)*0.75$"
+                },
+                "bitmap_width": 75.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time))$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]探险完成[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              }
+            ]
+          },
+          {
+            "internal_type": "StackLayerModule",
+            "internal_title": "1",
+            "config_stacking": "HORIZONTAL_BOTTOM",
+            "internal_toggles": {
+              "config_visible": 10
+            },
+            "internal_formulas": {
+              "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>1,ALWAYS,REMOVE)$"
+            },
+            "viewgroup_items": [
+              {
+                "internal_type": "BitmapModule",
+                "internal_toggles": {
+                  "bitmap_bitmap": 10,
+                  "bitmap_width": 10
+                },
+                "internal_formulas": {
+                  "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[1].avatar_side_icon)$",
+                  "bitmap_width": "$gv(文字比例)*0.75$"
+                },
+                "bitmap_width": 75.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time))$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]探险完成[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              }
+            ]
+          },
+          {
+            "internal_type": "StackLayerModule",
+            "internal_title": "2",
+            "config_stacking": "HORIZONTAL_BOTTOM",
+            "internal_toggles": {
+              "config_visible": 10
+            },
+            "internal_formulas": {
+              "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>2,ALWAYS,REMOVE)$"
+            },
+            "viewgroup_items": [
+              {
+                "internal_type": "BitmapModule",
+                "internal_toggles": {
+                  "bitmap_bitmap": 10,
+                  "bitmap_width": 10
+                },
+                "internal_formulas": {
+                  "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[2].avatar_side_icon)$",
+                  "bitmap_width": "$gv(文字比例)*0.75$"
+                },
+                "bitmap_width": 75.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time))$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]探险完成[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              }
+            ]
+          },
+          {
+            "internal_type": "StackLayerModule",
+            "internal_title": "3",
+            "config_stacking": "HORIZONTAL_BOTTOM",
+            "internal_toggles": {
+              "config_visible": 10
+            },
+            "internal_formulas": {
+              "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>3,ALWAYS,REMOVE)$"
+            },
+            "viewgroup_items": [
+              {
+                "internal_type": "BitmapModule",
+                "internal_toggles": {
+                  "bitmap_bitmap": 10,
+                  "bitmap_width": 10
+                },
+                "internal_formulas": {
+                  "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[3].avatar_side_icon)$",
+                  "bitmap_width": "$gv(文字比例)*0.75$"
+                },
+                "bitmap_width": 75.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time))$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]探险完成[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              }
+            ]
+          },
+          {
+            "internal_type": "StackLayerModule",
+            "internal_title": "4",
+            "config_stacking": "HORIZONTAL_BOTTOM",
+            "internal_toggles": {
+              "config_visible": 10
+            },
+            "internal_formulas": {
+              "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>4,ALWAYS,REMOVE)$"
+            },
+            "viewgroup_items": [
+              {
+                "internal_type": "BitmapModule",
+                "internal_toggles": {
+                  "bitmap_bitmap": 10,
+                  "bitmap_width": 10
+                },
+                "internal_formulas": {
+                  "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[4].avatar_side_icon)$",
+                  "bitmap_width": "$gv(文字比例)*0.75$"
+                },
+                "bitmap_width": 75.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time))$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]探险完成[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              }
+            ]
+          },
+          {
+            "internal_type": "StackLayerModule",
+            "internal_title": "5",
+            "config_stacking": "HORIZONTAL_BOTTOM",
+            "internal_toggles": {
+              "config_visible": 10
+            },
+            "internal_formulas": {
+              "config_visible": "$if(wg(gv(后端地址),json,.current_expedition_num)>5,ALWAYS,REMOVE)$"
+            },
+            "viewgroup_items": [
+              {
+                "internal_type": "BitmapModule",
+                "internal_toggles": {
+                  "bitmap_bitmap": 10,
+                  "bitmap_width": 10
+                },
+                "internal_formulas": {
+                  "bitmap_bitmap": "$wg(gv(后端地址),json,.expeditions[5].avatar_side_icon)$",
+                  "bitmap_width": "$gv(文字比例)*0.75$"
+                },
+                "bitmap_width": 75.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]剩余时间 $if(tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp(),\"H\")>0,tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp(),\"H'小时'\"))$$tf(wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp(),\"m'分钟'\")$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]完成时间 $df(ahh:mm,wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time))$[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              },
+              {
+                "internal_type": "TextModule",
+                "text_family": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf",
+                "text_expression": "[b]探险完成[/b]",
+                "position_anchor": "TOPLEFT",
+                "internal_toggles": {
+                  "text_size": 10,
+                  "position_padding_left": 0,
+                  "position_padding_top": 0,
+                  "position_padding_right": 0,
+                  "position_padding_bottom": 0,
+                  "text_width": 10
+                },
+                "internal_formulas": {
+                  "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
+                  "position_padding_left": "$si(rratio)*24/0.71287$",
+                  "position_padding_top": "$si(rratio)*142/0.71287$",
+                  "position_padding_right": "$si(rratio)*155/0.71287$",
+                  "position_padding_bottom": "$si(rratio)*97/0.71287$",
+                  "text_width": "$if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))-(gv(间隔)*2)$"
+                },
+                "text_size": 60.0,
+                "fx_gradient_offset_y": 100,
+                "fx_gradient_offset_x": 100,
+                "fx_gradient_color": "#9FFFFFFF",
+                "text_lines": 1.0,
+                "text_width": 60.0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
