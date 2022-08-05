@@ -1,0 +1,8 @@
+node_modules/
+logs/
+cache.json
+config.json
+data.txt
+package-lock.json
+yarn.lock
+test.js
