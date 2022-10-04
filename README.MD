@@ -4,6 +4,12 @@
 原作者：[酷安@ffbfe9｜www.coolapk.com](http://www.coolapk.com/u/2771310 "酷安@ffbfe9｜www.coolapk.com")
 ### Update Log | 更新日志
 
+[2022.10.5]
+- 修复圆角问题
+- 新增全局字体设置
+- 新增行间距设置
+- 部分微调
+
 [2022.8.5]
 - 无事发生
 

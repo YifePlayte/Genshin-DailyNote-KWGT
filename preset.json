@@ -8,7 +8,7 @@
     "width": 440,
     "height": 440,
     "features": "DOWNLOAD",
-    "release": 357121814,
+    "release": 362224416,
     "locked": false,
     "pflags": 0
   },
@@ -16,7 +16,7 @@
     "internal_type": "RootLayerModule",
     "globals_list": {
       "贴合边缘": {
-        "index": 15,
+        "index": 18,
         "type": "SWITCH",
         "title": "贴合边缘",
         "description": "",
@@ -24,7 +24,7 @@
         "value": 1
       },
       "a颜色1": {
-        "index": 22,
+        "index": 24,
         "type": "COLOR",
         "title": "a颜色1",
         "description": "",
@@ -32,7 +32,7 @@
         "value": "#FFF3A728"
       },
       "a颜色2": {
-        "index": 23,
+        "index": 25,
         "type": "COLOR",
         "title": "a颜色2",
         "description": "",
@@ -40,7 +40,7 @@
         "value": "#FFF5D297"
       },
       "b颜色1": {
-        "index": 24,
+        "index": 26,
         "type": "COLOR",
         "title": "b颜色1",
         "description": "",
@@ -48,7 +48,7 @@
         "value": "#FFF74783"
       },
       "b颜色2": {
-        "index": 25,
+        "index": 27,
         "type": "COLOR",
         "title": "b颜色2",
         "description": "",
@@ -56,7 +56,7 @@
         "value": "#FFF7B2CA"
       },
       "c颜色1": {
-        "index": 26,
+        "index": 28,
         "type": "COLOR",
         "title": "c颜色1",
         "description": "",
@@ -64,7 +64,7 @@
         "value": "#FFEB4141"
       },
       "c颜色2": {
-        "index": 27,
+        "index": 29,
         "type": "COLOR",
         "title": "c颜色2",
         "description": "",
@@ -72,14 +72,14 @@
         "value": "#FFF19770"
       },
       "颜色": {
-        "index": 10,
+        "index": 15,
         "type": "LIST",
         "title": "颜色",
         "entries": "a##橙,b##粉,c##红,d##蓝",
         "value": "d"
       },
       "d颜色1": {
-        "index": 28,
+        "index": 30,
         "type": "COLOR",
         "title": "d颜色1",
         "description": "",
@@ -87,7 +87,7 @@
         "value": "#FF215FF0"
       },
       "d颜色2": {
-        "index": 29,
+        "index": 31,
         "type": "COLOR",
         "title": "d颜色2",
         "description": "",
@@ -95,7 +95,7 @@
         "value": "#FF70B3F1"
       },
       "圆角": {
-        "index": 21,
+        "index": 23,
         "type": "NUMBER",
         "title": "圆角",
         "min": -10,
@@ -103,13 +103,13 @@
         "value": 30.0
       },
       "模块方形": {
-        "index": 16,
+        "index": 19,
         "type": "SWITCH",
         "title": "模块方形",
         "value": 0
       },
       "模块宽": {
-        "index": 19,
+        "index": 21,
         "type": "NUMBER",
         "title": "模块宽",
         "min": 0,
@@ -117,7 +117,7 @@
         "value": 350.0
       },
       "模块高": {
-        "index": 20,
+        "index": 22,
         "type": "NUMBER",
         "title": "模块高",
         "min": 0,
@@ -125,7 +125,7 @@
         "value": 200.0
       },
       "模块边长": {
-        "index": 18,
+        "index": 20,
         "type": "NUMBER",
         "title": "模块边长",
         "description": "在打开“模块方形”时生效",
@@ -134,7 +134,7 @@
         "value": 340.0
       },
       "读条方向": {
-        "index": 14,
+        "index": 16,
         "type": "LIST",
         "title": "读条方向",
         "entries": "t##↑,d##↓,r##→,l##←",
@@ -149,7 +149,7 @@
         "max": 100
       },
       "探索派遣边距": {
-        "index": 4,
+        "index": 8,
         "type": "NUMBER",
         "title": "探索派遣边距",
         "min": 0,
@@ -157,7 +157,7 @@
         "value": 10.0
       },
       "底部信息边距": {
-        "index": 8,
+        "index": 10,
         "type": "NUMBER",
         "title": "底部信息边距",
         "min": 0,
@@ -172,17 +172,31 @@
         "value": "http://localhost/resin/all"
       },
       "剩余或完成": {
-        "index": 9,
+        "index": 14,
         "type": "SWITCH",
         "title": "剩余或完成",
         "value": 0
       },
       "探索派遣位置": {
-        "index": 7,
+        "index": 9,
         "type": "LIST",
         "title": "探索派遣位置",
         "entries": "TOPLEFT##左上,BOTTOMRIGHT##右下,TOPRIGHT##右上,BOTTOMLEFT##左下",
         "value": "TOPLEFT"
+      },
+      "全局字体": {
+        "index": 7,
+        "type": "FONT",
+        "title": "全局字体",
+        "value": "kfile://org.kustom.provider/fonts/TrebuchetMS.ttf"
+      },
+      "行间距": {
+        "index": 4,
+        "type": "NUMBER",
+        "title": "行间距",
+        "min": -100,
+        "max": 100,
+        "value": 0.0
       }
     },
     "internal_toggles": {
@@ -294,7 +308,7 @@
           {
             "internal_toggles": {
               "shape_width": 10,
-              "shape_corners": 0,
+              "shape_corners": 100,
               "paint_color": 10,
               "fx_gradient_color": 10,
               "shape_height": 10,
@@ -360,7 +374,8 @@
         "position_anchor": "BOTTOMLEFT",
         "internal_toggles": {
           "position_padding_bottom": 0,
-          "position_padding_left": 100
+          "position_padding_left": 100,
+          "config_margin": 100
         },
         "internal_formulas": {
           "position_padding_bottom": "13",
@@ -369,7 +384,8 @@
         "position_padding_bottom": 13.0,
         "internal_title": "信息",
         "internal_globals": {
-          "position_padding_left": "底部信息边距"
+          "position_padding_left": "底部信息边距",
+          "config_margin": "行间距"
         },
         "viewgroup_items": [
           {
@@ -393,7 +409,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if(wg(gv(后端地址),json,.transformer.recovery_time.reached)=false,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -408,7 +425,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -421,7 +441,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if(wg(gv(后端地址),json,.transformer.recovery_time.reached)=false,0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -436,7 +457,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               }
             ]
           },
@@ -451,7 +475,8 @@
               "position_padding_top": 0,
               "position_padding_right": 0,
               "position_padding_bottom": 0,
-              "text_width": 10
+              "text_width": 10,
+              "text_family": 100
             },
             "internal_formulas": {
               "text_size": "$mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -466,7 +491,10 @@
             "fx_gradient_offset_x": 100,
             "fx_gradient_color": "#9FFFFFFF",
             "text_lines": 1.0,
-            "text_width": 60.0
+            "text_width": 60.0,
+            "internal_globals": {
+              "text_family": "全局字体"
+            }
           },
           {
             "internal_type": "TextModule",
@@ -479,7 +507,8 @@
               "position_padding_top": 0,
               "position_padding_right": 0,
               "position_padding_bottom": 0,
-              "text_width": 10
+              "text_width": 10,
+              "text_family": 100
             },
             "internal_formulas": {
               "text_size": "$mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -494,7 +523,10 @@
             "fx_gradient_offset_x": 100,
             "fx_gradient_color": "#9FFFFFFF",
             "text_lines": 1.0,
-            "text_width": 60.0
+            "text_width": 60.0,
+            "internal_globals": {
+              "text_family": "全局字体"
+            }
           },
           {
             "internal_type": "TextModule",
@@ -507,7 +539,8 @@
               "position_padding_top": 0,
               "position_padding_right": 0,
               "position_padding_bottom": 0,
-              "text_width": 10
+              "text_width": 10,
+              "text_family": 100
             },
             "internal_formulas": {
               "text_size": "$mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -522,7 +555,10 @@
             "fx_gradient_offset_x": 100,
             "fx_gradient_color": "#9FFFFFFF",
             "text_lines": 1.0,
-            "text_width": 60.0
+            "text_width": 60.0,
+            "internal_globals": {
+              "text_family": "全局字体"
+            }
           },
           {
             "internal_type": "StackLayerModule",
@@ -547,7 +583,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -562,7 +599,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -575,7 +615,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -590,7 +631,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -603,7 +647,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.resin_recovery_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -618,7 +663,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               }
             ]
           },
@@ -633,7 +681,8 @@
               "position_padding_top": 0,
               "position_padding_right": 0,
               "position_padding_bottom": 0,
-              "text_width": 10
+              "text_width": 10,
+              "text_family": 100
             },
             "internal_formulas": {
               "text_size": "$mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -648,7 +697,10 @@
             "fx_gradient_offset_x": 100,
             "fx_gradient_color": "#9FFFFFFF",
             "text_lines": 1.0,
-            "text_width": 60.0
+            "text_width": 60.0,
+            "internal_globals": {
+              "text_family": "全局字体"
+            }
           },
           {
             "internal_type": "TextModule",
@@ -661,7 +713,8 @@
               "position_padding_top": 0,
               "position_padding_right": 0,
               "position_padding_bottom": 0,
-              "text_width": 10
+              "text_width": 10,
+              "text_family": 100
             },
             "internal_formulas": {
               "text_size": "$mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -676,7 +729,10 @@
             "fx_gradient_offset_x": 100,
             "fx_gradient_color": "#9FFFFFFF",
             "text_lines": 1.0,
-            "text_width": 60.0
+            "text_width": 60.0,
+            "internal_globals": {
+              "text_family": "全局字体"
+            }
           },
           {
             "internal_type": "StackLayerModule",
@@ -747,7 +803,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -762,7 +819,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -775,7 +835,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -790,7 +851,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -803,7 +867,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -818,7 +883,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   }
                 ]
               },
@@ -856,7 +924,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -871,7 +940,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -884,7 +956,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -899,7 +972,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -912,7 +988,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -927,7 +1004,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   }
                 ]
               },
@@ -965,7 +1045,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -980,7 +1061,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -993,7 +1077,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1008,7 +1093,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -1021,7 +1109,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1036,7 +1125,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   }
                 ]
               },
@@ -1074,7 +1166,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1089,7 +1182,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -1102,7 +1198,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1117,7 +1214,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -1130,7 +1230,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1145,7 +1246,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   }
                 ]
               },
@@ -1183,7 +1287,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1198,7 +1303,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -1211,7 +1319,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1226,7 +1335,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -1239,7 +1351,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1254,7 +1367,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   }
                 ]
               },
@@ -1292,7 +1408,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1307,7 +1424,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -1320,7 +1440,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1335,7 +1456,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   },
                   {
                     "internal_type": "TextModule",
@@ -1348,7 +1472,8 @@
                       "position_padding_top": 0,
                       "position_padding_right": 0,
                       "position_padding_bottom": 0,
-                      "text_width": 10
+                      "text_width": 10,
+                      "text_family": 100
                     },
                     "internal_formulas": {
                       "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1363,7 +1488,10 @@
                     "fx_gradient_offset_x": 100,
                     "fx_gradient_color": "#9FFFFFFF",
                     "text_lines": 1.0,
-                    "text_width": 60.0
+                    "text_width": 60.0,
+                    "internal_globals": {
+                      "text_family": "全局字体"
+                    }
                   }
                 ]
               }
@@ -1381,12 +1509,14 @@
           "position_padding_bottom": 0,
           "position_padding_right": 100,
           "position_anchor": 10,
-          "config_visible": 10
+          "config_visible": 10,
+          "config_margin": 10
         },
         "internal_formulas": {
           "position_offset_x": "$gv(间隔)-23$",
           "position_anchor": "$gv(探索派遣位置, TOPLEFT)$",
-          "config_visible": "$if(gv(探索派遣位置)=BOTTOMLEFT,REMOVE,ALWAYS)$"
+          "config_visible": "$if(gv(探索派遣位置)=BOTTOMLEFT,REMOVE,ALWAYS)$",
+          "config_margin": "$gv(行间距)-12$"
         },
         "position_anchor": "TOPLEFT",
         "internal_globals": {
@@ -1402,7 +1532,7 @@
             "switch": "剩余或完成"
           }
         ],
-        "position_padding_bottom": 22.0,
+        "position_padding_bottom": 24.0,
         "viewgroup_items": [
           {
             "internal_type": "StackLayerModule",
@@ -1438,7 +1568,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1453,7 +1584,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -1466,7 +1600,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1481,7 +1616,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -1494,7 +1632,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[0].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1509,7 +1648,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               }
             ]
           },
@@ -1547,7 +1689,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1562,7 +1705,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -1575,7 +1721,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1590,7 +1737,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -1603,7 +1753,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[1].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1618,7 +1769,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               }
             ]
           },
@@ -1656,7 +1810,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1671,7 +1826,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -1684,7 +1842,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1699,7 +1858,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -1712,7 +1874,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[2].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1727,7 +1890,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               }
             ]
           },
@@ -1765,7 +1931,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1780,7 +1947,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -1793,7 +1963,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1808,7 +1979,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -1821,7 +1995,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[3].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1836,7 +2011,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               }
             ]
           },
@@ -1874,7 +2052,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1889,7 +2068,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -1902,7 +2084,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1917,7 +2100,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -1930,7 +2116,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[4].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1945,7 +2132,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               }
             ]
           },
@@ -1983,7 +2173,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,0,gv(剩余或完成),0,1)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -1998,7 +2189,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -2011,7 +2205,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,0,gv(剩余或完成),1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -2026,7 +2221,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               },
               {
                 "internal_type": "TextModule",
@@ -2039,7 +2237,8 @@
                   "position_padding_top": 0,
                   "position_padding_right": 0,
                   "position_padding_bottom": 0,
-                  "text_width": 10
+                  "text_width": 10,
+                  "text_family": 100
                 },
                 "internal_formulas": {
                   "text_size": "$if((wg(gv(后端地址),json,.last_update)+wg(gv(后端地址),json,.expeditions[5].remained_time)-dp())<=0,1,0)*mu(min,if(gv(模块方形),if(gv(贴合边缘),mu(min,si(rwidth),si(rheight)),gv(模块边长)),if(gv(贴合边缘),si(rwidth),gv(模块宽)))*55/250,40)*gv(文字比例)*0.01$",
@@ -2054,7 +2253,10 @@
                 "fx_gradient_offset_x": 100,
                 "fx_gradient_color": "#9FFFFFFF",
                 "text_lines": 1.0,
-                "text_width": 60.0
+                "text_width": 60.0,
+                "internal_globals": {
+                  "text_family": "全局字体"
+                }
               }
             ]
           }
